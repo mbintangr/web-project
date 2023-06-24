@@ -5,8 +5,8 @@ const Welcome = () => {
   return (
     <div className='flex-col h-[100vh] bg-zinc-200 px-[15vw] items-center justify-center py-[35vh]'>
       <h1 className='text-3xl font-bold py-2'>Hello There!</h1>
-      <p className='pt-2 pb-4'>Welcome to the most fabulous clothing catalog website ever! Here you will find the latest trends, the hottest styles, and the best deals on everything from socks to hats. Whether you are looking for a casual outfit, a formal dress, or a funky accessory, we have it all. Browse our collections, shop by category, or use our handy search tool to find exactly what you need. And don't forget to check out our special offers and discounts for even more savings. You deserve to look amazing, and we are here to help you achieve that. So go ahead and explore our website, and get ready to be dazzled by our fashion choices!</p>
-      <Button link="/Product" title="Products"/>
+      <p className='pt-2 pb-4'>Welcome to Cravey, your ultimate destination for indulgent treats and comforting comfort food. Our carefully curated collection of recipes will satisfy your cravings and bring pure delight to your taste buds. From decadent chocolate desserts to cheesy comfort foods, our expert chefs and passionate food enthusiasts have perfected each recipe, ensuring you can recreate these irresistible dishes with ease. With detailed instructions, helpful tips, and a vibrant community of food lovers, Cravey is more than just a website—it's a place where culinary dreams come true. Get ready to embark on a mouthwatering journey and indulge in the most satisfying flavors at Cravey.</p>
+      <Button link="/Recipes" title="Recipes"/>
     </div>
   )
 }
