@@ -4,7 +4,7 @@ import Card from './Card'
 
 function Trending() {
   return (
-    <div className='bg-[#64ccc598] p-10 md:p-7 sm:p-3 mx-auto my-10 rounded-2xl shadow-xl text-[#001C30] max-w-[75vw] flex-col justify-center' id='trending'>
+    <div className='bg-tertiary p-10 md:p-7 sm:p-3 mx-auto my-10 rounded-3xl shadow-xl text-primary max-w-[75vw] flex-col justify-center' id='trending'>
         <h1 className='text-3xl font-bold pb-5 text-center'>Trending🔥</h1>
 
         <div className='flex mx-auto flex-wrap'>
