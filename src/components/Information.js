@@ -1,14 +1,18 @@
-import React from 'react'
+import React from "react";
+import { FcInfo } from "react-icons/fc";
 
 function Information() {
   return (
-    <div className='w-[100%] bg-yellow-300 text-primary px-[15vw] py-5 my-10'>
-        <h1 className='font-bold text-2xl pb-3'>ℹ️Information!</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur error ipsam recusandae natus voluptate officia sed. Inventore neque, quo quasi beatae reiciendis praesentium excepturi illo, placeat atque fugit exercitationem?
-        </p>
+    <div className="w-[100%] bg-yellow-300 text-primary px-[15vw] py-5 my-10">
+      <div className="flex font-bold text-2xl pb-3 items-center">
+        <FcInfo size={30}/>
+        <h1 className="mx-2">Information!</h1>
+      </div>
+      <p>
+        Hello and welcome to our amazing cooking recipe site! We're absolutely thrilled to present to you the very first version of our platform. If you have any thoughts, suggestions, or questions about our site, we would be overjoyed to hear from you. Feel free to reach out to us using the link provided on our contact page. Happy cooking and let's embark on this exciting culinary journey together!
+      </p>
     </div>
-  )
+  );
 }
 
-export default Information
+export default Information;
