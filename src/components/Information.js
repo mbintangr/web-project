@@ -8,8 +8,11 @@ function Information() {
         <FcInfo size={30}/>
         <h1 className="mx-2">Information!</h1>
       </div>
-      <p>
+      <p className="hidden sm:block">
         Hello and welcome to our amazing cooking recipe site! We're absolutely thrilled to present to you the very first version of our platform. If you have any thoughts, suggestions, or questions about our site, we would be overjoyed to hear from you. Feel free to reach out to us using the link provided on our contact page. Happy cooking and let's embark on this exciting culinary journey together!
+      </p>
+      <p className="sm:hidden">
+        Welcome to our cooking recipe site, where we eagerly await your feedback and suggestions as we embark on this exciting culinary journey together.
       </p>
     </div>
   );
