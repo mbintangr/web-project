@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="text-center sm:flex p-7 sm:justify-between bg-primary sm:align-middle text-quaternary sm:items-center w-[100vw] px-[15vw] fixed shadow-xl">
       <Link to="/">
         <div className="flex items-center">
-          <img src={logo} alt="" className="w-[50px] mr-2" />
+          <img src={logo} alt="" className="h-[50px] mr-2" />
           <h1 className="text-3xl font-bold">
             Cravery
           </h1>
