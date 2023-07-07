@@ -8,11 +8,11 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="text-center flex p-7 justify-between bg-primary align-middle text-quaternary items-center w-[100vw] px-[15vw] fixed shadow-xl z-20">
+    <div className="text-center flex py-5 px-[15vw] justify-between bg-primary text-quaternary items-center w-[100vw] fixed shadow-xl z-20 max-h-[75px] sm:max-h-[100px]">
       <Link to="/">
         <div className="flex items-center">
-          <img src={logo} alt="" className="h-[50px] mr-2" />
-          <h1 className="text-3xl font-bold">Cravery</h1>
+          <img src={logo} alt="" className="h-[35px] mr-2 sm:h-[50px]" />
+          <h1 className="text-2xl sm:text-3xl font-bold">Cravery</h1>
         </div>
       </Link>
       <div className="hidden sm:flex items-center mt-2">
@@ -30,8 +30,7 @@ const Navbar = () => {
 
       {/* mobile nav */}
       <AiOutlineMenu
-        size="30"
-        className="mx-2 sm:hidden cursor-pointer"
+        className="mx-2 sm:hidden cursor-pointer text-2xl"
         onClick={() => setNav(!nav)}
       />
 
@@ -43,8 +42,8 @@ const Navbar = () => {
       ></div>
 
       {/* sidebar */}
-      <div className={(nav ? "absolute top-0 right-0 duration-300" : "absolute top-0 right-[-100%] duration-300")}>
-        <div className="p-10 w-[300px] h-screen bg-tertiary shadow-xl text-secondary">
+      <div className={(nav ? "absolute top-0 right-0 duration-300" : "absolute top-0 right-[-150%] duration-300")}>
+        <div className="p-6 w-[300px] h-screen bg-tertiary shadow-xl text-secondary">
           <div className="flex justify-between items-center">
             <h1 className="font-bold text-2xl">Cravery</h1>
             <AiOutlineClose size={30} className="cursor-pointer" onClick={() => setNav(!nav)} />
