@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { recipes } from "../data/data";
 import Card from "../components/Card";
-import Slider from "../components/Slider";
 import CategoryCard from "../components/CategoryCard";
 
 const Recipes = (props) => {
