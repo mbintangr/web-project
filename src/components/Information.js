@@ -3,7 +3,7 @@ import { FcInfo } from "react-icons/fc";
 
 function Information() {
   return (
-    <div className="w-[100%] bg-yellow-300 text-primary px-[15vw] py-5 my-10">
+    <div className="w-[100%] bg-yellow-300 text-primary px-[15vw] py-5 mb-10">
       <div className="flex font-bold text-2xl pb-3 items-center">
         <FcInfo size={30}/>
         <h1 className="mx-2">Information!</h1>
