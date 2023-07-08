@@ -8,7 +8,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="text-center flex py-5 px-[15vw] justify-between bg-primary text-quaternary items-center w-[100vw] fixed shadow-xl z-20 max-h-[75px] sm:max-h-[100px]">
+    <div className="text-center flex py-5 px-[10vw] sm:px-[15vw] justify-between bg-primary text-quaternary items-center w-[100vw] fixed shadow-xl z-20 max-h-[75px] sm:max-h-[100px] top-0 left-0">
       <Link to="/">
         <div className="flex items-center">
           <img src={logo} alt="" className="h-[35px] mr-2 sm:h-[50px]" />
