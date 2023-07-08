@@ -39,7 +39,7 @@ const Navbar = () => {
         className={
           nav ? "bg-black/50 w-full h-screen absolute top-0 left-0" : "hidden"
         }
-      ></div>
+      ><button className="w-[100%] h-[100%] cursor-default" onClick={() => setNav(!nav)}></button></div>
 
       {/* sidebar */}
       <div className={(nav ? "absolute top-0 right-0 duration-300" : "absolute top-0 right-[-150%] duration-300")}>
