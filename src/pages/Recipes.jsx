@@ -16,7 +16,7 @@ const Recipes = (props) => {
 
   return (
     <div className="px-[10vw] sm:px-[15vw] sm:pt-[130px] pt-[100px]">
-        <h1 className="text-3xl font-bold mb-3">{props.foodName} Recipes!</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold mb-3">{props.foodName} Recipes!</h1>
         <p>Welcome to Cravery's Recipes page!, the page where you can find delicious and easy recipes for any occasion. Whether you're looking for a quick breakfast, a hearty dinner, or a decadent dessert, we have you covered. Browse our categories, search by ingredients, or check out our featured recipes. You'll be amazed by what you can create in your own kitchen with Cravery.</p>
 
       <div className="my-5">
