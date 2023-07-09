@@ -547,7 +547,7 @@ export const recipes = [
       "Ceviche is a seafood dish popular in Latin American cuisine, particularly in Peru. It is made by marinating raw fish or seafood in citrus juice (such as lime or lemon), along with onions, peppers, and various seasonings.",
     img: "https://images.pexels.com/photos/15352336/pexels-photo-15352336/free-photo-of-ceviche.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     link: "/Recipes/17",
-    category: "South America",
+    category: "America",
     difficulty: "Easy",
     about:
       "Ceviche is a refreshing and vibrant dish that highlights the flavors of fresh seafood. This popular Latin American delicacy involves marinating raw fish or seafood, such as shrimp, scallops, or white fish, in citrus juice, typically lime or lemon. The acid from the citrus juice gently cooks the seafood, resulting in a firm and opaque texture. To enhance the taste, the ceviche is mixed with onions, peppers, and a variety of seasonings like cilantro, garlic, and chili peppers. The dish is served chilled, allowing the flavors to meld together. Ceviche is a perfect appetizer or light meal, and it provides a delightful balance of tanginess, spice, and the natural sweetness of the seafood.",
