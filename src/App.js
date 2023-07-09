@@ -7,8 +7,11 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
+import Foods from './pages/Foods';
+import { recipes } from './data/data';
 
 function App() {
+  console.log(recipes);
   return (
     <div className="App">
       <Router>
@@ -18,6 +21,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Recipes" element={<Recipes />} />
+
+          {recipes.map((item, index) => (
+            <Route path={'/Recipes/' + item.id} element={<Foods obj={item} />}/>
+          ))}
+
           <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer></Footer>
