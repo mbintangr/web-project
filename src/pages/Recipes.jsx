@@ -3,6 +3,11 @@ import { recipes } from "../data/data";
 import Card from "../components/Card";
 import CategoryCard from "../components/CategoryCard";
 
+import allCategory from '../assets/all.jpg'
+import asiaCategory from '../assets/asia.jpg'
+import americaCategory from '../assets/america.jpg'
+import europeCategory from '../assets/europe.jpg'
+
 const Recipes = (props) => {
   const [foods, setFoods] = useState(recipes);
 
@@ -27,16 +32,16 @@ const Recipes = (props) => {
           {/* items */}
           <div className="grid sm:grid-cols-4 grid-cols-2 gap-3 w-full">
             <button onClick={() => setFoods(recipes)}>
-              <CategoryCard title='All' img="https://cdn.leonardo.ai/users/f2ba8c52-4fd9-4299-9cb1-bc5e20f0e77b/generations/ecdca4f1-84f6-4de4-ae0a-95db039fc42a/DreamShaper_v5_3d_render_high_qualitybackground_image_for_all_3.jpg"/>
+              <CategoryCard title='All' img={allCategory}/>
             </button>
             <button onClick={() => filterCategory("Asia")}>
-              <CategoryCard title='Asia' img='https://cdn.leonardo.ai/users/f2ba8c52-4fd9-4299-9cb1-bc5e20f0e77b/generations/0afdd322-4631-436c-83a8-48973689faa1/DreamShaper_v5_3d_render_high_qualitybackground_image_for_asia_3.jpg' />
+              <CategoryCard title='Asia' img={asiaCategory} />
             </button>
             <button onClick={() => filterCategory("America")}>
-              <CategoryCard title='America' img='https://cdn.leonardo.ai/users/f2ba8c52-4fd9-4299-9cb1-bc5e20f0e77b/generations/d0722ccb-4825-4383-90d5-33ab11db24fc/DreamShaper_v5_3d_render_high_qualitybackground_image_for_amer_2.jpg' />
+              <CategoryCard title='America' img={americaCategory} />
             </button>
             <button onClick={() => filterCategory("Europe")}>
-              <CategoryCard title='Europe' img='https://cdn.leonardo.ai/users/f2ba8c52-4fd9-4299-9cb1-bc5e20f0e77b/generations/3bf65b31-7aa8-42af-b537-8cbf6fb3f47b/DreamShaper_v5_3d_render_high_qualitybackground_image_for_euro_2.jpg' />
+              <CategoryCard title='Europe' img={europeCategory} />
             </button>
           </div>
         </div>
