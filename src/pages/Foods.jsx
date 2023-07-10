@@ -30,7 +30,7 @@ const Foods = (props) => {
             : "h-0 duration-300 overflow-hidden"
         }
       >
-        <h1 className="text-xl sm:text-2xl font-bold mb-3">
+        <h1 className="text-xl sm:text-2xl font-bold mb-3 text-primary">
           About {food.name}
         </h1>
         <p>{food.about}</p>
