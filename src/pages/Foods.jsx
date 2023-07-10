@@ -19,7 +19,7 @@ const Foods = (props) => {
         className="my-3 w-full min-h-[200px] sm:max-h-[500px] max-h-[300px] object-cover rounded-3xl shadow-xl"
         onClick={() => setIsPopup(!isPopup)}
       />
-      <p className={isPopup ? "hidden" : "italic text-center"}>
+      <p className={isPopup ? "hidden" : "italic text-center text-sm"}>
         Tap image for details!
       </p>
       {/* explanation */}
