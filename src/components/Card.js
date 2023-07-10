@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Card(props) {
   return (
-    <div className="flex-col mx-auto rounded-2xl shadow-2xl hover:shadow-secondary/30 bg-white min-w-[30%] hover:scale-105 duration-300">
+    <div className="flex-col mx-auto rounded-2xl shadow-2xl hover:shadow-secondary/40 bg-white min-w-[30%] hover:scale-105 duration-300">
       <Link to={props.link}>
         <img
           src={props.src}
@@ -13,8 +13,8 @@ function Card(props) {
         />
 
         <div className="p-7">
-          <h1 className="text-xl font-bold mt-2">{props.title}</h1>
-          <p className="my-2">{props.description}</p>
+          <h1 className="text-xl font-bold mt-2 text-primary">{props.title}</h1>
+          <p className="my-2 etxt-black">{props.description}</p>
           <Button link={props.link} title="Read More" />
         </div>
       </Link>
