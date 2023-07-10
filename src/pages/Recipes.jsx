@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { recipes } from "../data/data";
 import Card from "../components/Card";
 import CategoryCard from "../components/CategoryCard";
+import Layout from "../components/Layout";
 
-import allCategory from '../assets/all.jpg'
-import asiaCategory from '../assets/asia.jpg'
-import americaCategory from '../assets/america.jpg'
-import europeCategory from '../assets/europe.jpg'
+import allCategory from "../assets/all.jpg";
+import asiaCategory from "../assets/asia.jpg";
+import americaCategory from "../assets/america.jpg";
+import europeCategory from "../assets/europe.jpg";
 
 const Recipes = (props) => {
   const [foods, setFoods] = useState(recipes);
@@ -20,28 +21,35 @@ const Recipes = (props) => {
   };
 
   return (
-    <div className="px-[10vw] sm:px-[15vw] sm:pt-[130px] pt-[100px]">
-        <h1 className="text-2xl sm:text-3xl font-bold mb-3">{props.foodName} Recipes!</h1>
-        <p>Welcome to Cravery's Recipes page!, the page where you can find delicious and easy recipes for any occasion. Whether you're looking for a quick breakfast, a hearty dinner, or a decadent dessert, we have you covered. Browse our categories, search by ingredients, or check out our featured recipes. You'll be amazed by what you can create in your own kitchen with Cravery.</p>
+    <Layout>
+      <h1 className="text-2xl sm:text-3xl text-primary font-bold mb-3">
+        {props.foodName} Recipes!
+      </h1>
+      <p>
+        Welcome to Cravery's Recipes page!, the page where you can find
+        delicious and easy recipes for any occasion. Whether you're looking for
+        a quick breakfast, a hearty dinner, or a decadent dessert, we have you
+        covered. Browse our categories, search by ingredients, or check out our
+        featured recipes. You'll be amazed by what you can create in your own
+        kitchen with Cravery.
+      </p>
 
       <div className="my-5">
         <div className="my-2">
-          <h1 className="text-2xl font-bold my-4">
-            Category
-          </h1>
+          <h1 className="text-2xl text-primary font-bold my-4">Category</h1>
           {/* items */}
           <div className="grid sm:grid-cols-4 grid-cols-2 gap-3 w-full">
             <button onClick={() => setFoods(recipes)}>
-              <CategoryCard title='All' img={allCategory}/>
+              <CategoryCard title="All" img={allCategory} />
             </button>
             <button onClick={() => filterCategory("Asia")}>
-              <CategoryCard title='Asia' img={asiaCategory} />
+              <CategoryCard title="Asia" img={asiaCategory} />
             </button>
             <button onClick={() => filterCategory("America")}>
-              <CategoryCard title='America' img={americaCategory} />
+              <CategoryCard title="America" img={americaCategory} />
             </button>
             <button onClick={() => filterCategory("Europe")}>
-              <CategoryCard title='Europe' img={europeCategory} />
+              <CategoryCard title="Europe" img={europeCategory} />
             </button>
           </div>
         </div>
@@ -57,7 +65,7 @@ const Recipes = (props) => {
           />
         ))}
       </div>
-    </div>
+    </Layout>
   );
 };
 
