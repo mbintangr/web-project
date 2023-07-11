@@ -14,22 +14,6 @@ const About = () => {
 
   return (
     <Layout>
-import React, { useState } from 'react';
-import Layout from '../components/Layout';
-import pict from '../assets/creator1.jpg';
-import picts from '../assets/dzaky.jpg';
-
-const About = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [selectedCreator, setSelectedCreator] = useState(null);
-
-  const toggleModal = (creator) => {
-    setSelectedCreator(creator);
-    setShowModal(!showModal);
-  };
-
-  return (
-    <Layout>
       <div className='flex flex-col items-center'>
         <h1 className='text-3xl font-bold pb-5'>About Us!</h1>
         <div className='mb-auto grid grid-cols-2 gap-4'>
@@ -42,11 +26,6 @@ const About = () => {
               src={pict}
               alt='First Creator'
             />
-            <p className='text-center mt-2'>
-              Nama Pembuat 1
-              <br />
-              Pesan singkat dari Pembuat 1
-            </p>
           </div>
           <div
             className='flex flex-col items-center cursor-pointer'
@@ -57,11 +36,6 @@ const About = () => {
               src={picts}
               alt='Second Creator'
             />
-            <p className='text-center mt-2'>
-              Nama Pembuat 2
-              <br />
-              Pesan singkat dari Pembuat 2
-            </p>
           </div>
         </div>
         {showModal && (
@@ -74,11 +48,10 @@ const About = () => {
                     src={pict}
                     alt='First Creator'
                   />
-                  <h2 className='text-2xl font-bold text-center'>Creator 1</h2>
+                  <h2 className='text-2xl font-bold text-center'>Bintang</h2>
                   <p className='text-center'>
-                    Umur: 25 tahun
-                    <br />
-                    Pesan singkat: "Halo! Saya adalah pencipta kreatif yang bersemangat dalam dunia teknologi."
+                    Umur: 19 Tahun
+                    Pesan singkat: "Pesan singkat saya"
                   </p>
                 </div>
               )}
@@ -89,11 +62,10 @@ const About = () => {
                     src={picts}
                     alt='Second Creator'
                   />
-                  <h2 className='text-2xl font-bold text-center'>Creator 2</h2>
+                  <h2 className='text-2xl font-bold text-center'>Dzaky</h2>
                   <p className='text-center'>
-                    Umur: 30 tahun
-                    <br />
-                    Pesan singkat: "Hai! Saya adalah seorang desainer berpengalaman yang mencintai seni dan inovasi."
+                    Umur: 19 Tahun
+                    Pesan singkat: "Ini pesan singkat"
                   </p>
                 </div>
               )}
@@ -106,15 +78,15 @@ const About = () => {
             </div>
           </div>
         )}
-        <p className='text-center mt-4'>
+          <p className='text-center mt-4'>
           Selamat datang di website kami! Kami adalah dua orang pembuat web yang bersemangat dalam
           menggabungkan teknologi dengan kreativitas. Kami harap Anda menikmati eksplorasi di dunia
           kuliner melalui website ini. Terima kasih atas kunjungan Anda!
         </p>
+
       </div>
     </Layout>
   );
 };
 
 export default About;
-
