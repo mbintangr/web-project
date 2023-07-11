@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import pict from '../assets/creator1.jpg';
-import picts from '../assets/asia.jpg';
-import Modal from 'react-modal';
+import picts from '../assets/dzaky.jpg';
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -27,6 +26,7 @@ const About = () => {
               src={pict}
               alt='First Creator'
             />
+        
           </div>
           <div
             className='flex flex-col items-center cursor-pointer'
@@ -37,48 +37,58 @@ const About = () => {
               src={picts}
               alt='Second Creator'
             />
+            <p className='text-center mt-2'>
+            
+            </p>
           </div>
         </div>
-        <Modal
-          isOpen={showModal}
-          onRequestClose={toggleModal}
-          className='modal'
-          overlayClassName='overlay'
-        >
-          <div className='modal-content'>
-            {selectedCreator === 'creator1' && (
-              <div>
-                <img
-                  className='w-64 h-64 rounded-full mb-4'
-                  src={pict}
-                  alt='First Creator'
-                />
-                <p className='text-center'>
-                  Description of the first creator goes here.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Sed consequat arcu vitae enim efficitur, at dignissim purus ultrices.
-                </p>
-              </div>
-            )}
-            {selectedCreator === 'creator2' && (
-              <div>
-                <img
-                  className='w-64 h-64 rounded-full mb-4'
-                  src={picts}
-                  alt='Second Creator'
-                />
-                <p className='text-center'>
-                  Description of the second creator goes here.
-                  Vestibulum at nibh nec elit congue tincidunt.
-                  Aenean eget neque consequat, luctus felis ac, suscipit nunc.
-                </p>
-              </div>
-            )}
-            <button className='modal-close' onClick={toggleModal}>
-              Close
-            </button>
+        {showModal && (
+          <div className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50'>
+            <div className='bg-white rounded-lg p-8 max-w-md'>
+              {selectedCreator === 'creator1' && (
+                <div className='animate-fade-in'>
+                  <img
+                    className='w-64 h-64 rounded-full mb-4 mx-auto'
+                    src={pict}
+                    alt='First creator'
+                  />
+                  <h2 className='text-2xl font-bold text-center'>Bintang</h2>
+                  <p className='text-center'>
+                    Umur: 19 tahun
+                    <br />
+                    Pesan singkat: "blablablanalakjnbekjnkw."
+                  </p>
+                </div>
+              )}
+              {selectedCreator === 'creator2' && (
+                <div className='animate-fade-in'>
+                  <img
+                    className='w-64 h-64 rounded-full mb-4 mx-auto'
+                    src={picts}
+                    alt='Second Creator'
+                  />
+                  <h2 className='text-2xl font-bold text-center'>Creator 2</h2>
+                  <p className='text-center'>
+                    Umur: 19 tahun
+                    <br />
+                    Pesan singkat: "hjfbekjbfekuwsbfkeuwbfukewbuikw."
+                  </p>
+                </div>
+              )}
+              <button
+                className='bg-gray-500 text-white rounded-lg px-4 py-2 mt-6 mx-auto block'
+                onClick={() => setShowModal(false)}
+              >
+                Close
+              </button>
+            </div>
           </div>
-        </Modal>
+        )}
+        <p className='text-center mt-4'>
+          Selamat datang di website kami! Kami adalah dua orang pembuat web yang bersemangat dalam
+          menggabungkan teknologi dengan kreativitas. Kami harap Anda menikmati eksplorasi di dunia
+          kuliner melalui website ini. Terima kasih atas kunjungan Anda!
+        </p>
       </div>
     </Layout>
   );
