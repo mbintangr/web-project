@@ -14,6 +14,22 @@ const About = () => {
 
   return (
     <Layout>
+import React, { useState } from 'react';
+import Layout from '../components/Layout';
+import pict from '../assets/creator1.jpg';
+import picts from '../assets/dzaky.jpg';
+
+const About = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedCreator, setSelectedCreator] = useState(null);
+
+  const toggleModal = (creator) => {
+    setSelectedCreator(creator);
+    setShowModal(!showModal);
+  };
+
+  return (
+    <Layout>
       <div className='flex flex-col items-center'>
         <h1 className='text-3xl font-bold pb-5'>About Us!</h1>
         <div className='mb-auto grid grid-cols-2 gap-4'>
@@ -26,7 +42,11 @@ const About = () => {
               src={pict}
               alt='First Creator'
             />
-        
+            <p className='text-center mt-2'>
+              Nama Pembuat 1
+              <br />
+              Pesan singkat dari Pembuat 1
+            </p>
           </div>
           <div
             className='flex flex-col items-center cursor-pointer'
@@ -38,7 +58,9 @@ const About = () => {
               alt='Second Creator'
             />
             <p className='text-center mt-2'>
-            
+              Nama Pembuat 2
+              <br />
+              Pesan singkat dari Pembuat 2
             </p>
           </div>
         </div>
@@ -50,13 +72,13 @@ const About = () => {
                   <img
                     className='w-64 h-64 rounded-full mb-4 mx-auto'
                     src={pict}
-                    alt='First creator'
+                    alt='First Creator'
                   />
-                  <h2 className='text-2xl font-bold text-center'>Bintang</h2>
+                  <h2 className='text-2xl font-bold text-center'>Creator 1</h2>
                   <p className='text-center'>
-                    Umur: 19 tahun
+                    Umur: 25 tahun
                     <br />
-                    Pesan singkat: "blablablanalakjnbekjnkw."
+                    Pesan singkat: "Halo! Saya adalah pencipta kreatif yang bersemangat dalam dunia teknologi."
                   </p>
                 </div>
               )}
@@ -69,9 +91,9 @@ const About = () => {
                   />
                   <h2 className='text-2xl font-bold text-center'>Creator 2</h2>
                   <p className='text-center'>
-                    Umur: 19 tahun
+                    Umur: 30 tahun
                     <br />
-                    Pesan singkat: "hjfbekjbfekuwsbfkeuwbfukewbuikw."
+                    Pesan singkat: "Hai! Saya adalah seorang desainer berpengalaman yang mencintai seni dan inovasi."
                   </p>
                 </div>
               )}
@@ -95,3 +117,4 @@ const About = () => {
 };
 
 export default About;
+
