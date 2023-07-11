@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Layout from '../components/Layout';
-import pict from '../assets/creator1.jpg';
-import picts from '../assets/dzaky.jpg';
+import foto1 from '../assets/creator1.jpg';
+import foto2 from '../assets/dzaky.jpg';
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -23,10 +23,10 @@ const About = () => {
           >
             <img
               className='w-48 h-48 rounded-full'
-              src={pict}
+              src={foto1}
               alt='First Creator'
             />
-            <h2 className='mt-4 text-xl font-medium'>Bintang</h2>
+            <h2 className='mt-4 text-xl font-medium'>Bintang Ramadhan</h2>
           </div>
           <div
             className='flex flex-col items-center cursor-pointer hover:shadow-md transition duration-300'
@@ -34,10 +34,10 @@ const About = () => {
           >
             <img
               className='w-48 h-48 rounded-full'
-              src={picts}
+              src={foto2}
               alt='Second Creator'
             />
-            <h2 className='mt-4 text-xl font-medium'>Dzaky</h2>
+            <h2 className='mt-4 text-xl font-medium'>Dzaky Naufal</h2>
           </div>
         </div>
         {showModal && (
@@ -47,22 +47,22 @@ const About = () => {
                 <div className='animate-fade-in'>
                   <img
                     className='w-64 h-64 rounded-full mb-4 mx-auto'
-                    src={pict}
+                    src={foto1}
                     alt='First Creator'
                   />
-                  <h2 className='text-2xl font-bold text-center'>Bintang</h2>
-                  <p className='text-center'>Age: 19 years old</p>
+                  <h2 className='text-2xl font-bold text-center'>Bintang Ramadhan</h2>
+                  <p className='text-center'>Thank you for visiting our website! We appreciate your support in our mission to share international and local recipes. We hope you find culinary inspiration and enjoy delicious dishes. Stay tuned for the latest recipes and cooking tips. Thank you for stopping by!</p>
                 </div>
               )}
               {selectedCreator === 'creator2' && (
                 <div className='animate-fade-in'>
                   <img
                     className='w-64 h-64 rounded-full mb-4 mx-auto'
-                    src={picts}
+                    src={foto2}
                     alt='Second Creator'
                   />
-                  <h2 className='text-2xl font-bold text-center'>Dzaky</h2>
-                  <p className='text-center'>Age: 19 years old</p>
+                  <h2 className='text-2xl font-bold text-center'>Dzaky Naufal</h2>
+                  <p className='text-center'>Thank you for visiting our recipe website! We appreciate your support and hope you enjoy our collection of international and local recipes. Happy cooking and have a delightful culinary experience!!</p>
                 </div>
               )}
               <button

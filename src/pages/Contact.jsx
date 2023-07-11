@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import person1Photo from '../assets/creator1.jpg';
-import person2Photo from '../assets/dzaky.jpg';
+import foto1 from '../assets/creator1.jpg';
+import foto2 from '../assets/dzaky.jpg';
 import { FiPhone, FiInstagram, FiLinkedin } from 'react-icons/fi';
 
 export default function Contact() {
@@ -20,68 +20,67 @@ export default function Contact() {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center">
-        <div className="my-8">
-          <h1 className="text-3xl font-bold mb-4">Contact</h1>
-          <div className="flex items-center mb-8">
-            <img src={person1Photo} alt="Person 1" className="w-32 h-32 rounded-full mr-4" />
+      <div className="container mx-auto py-12">
+        <h1 className="text-3xl font-bold mb-8">Contact</h1>
+        <div className="grid grid-cols-1 gap-8">
+          <div className="flex items-center">
+            <img src={foto1} alt="Person 1" className="w-40 h-40 rounded-full mr-6" />
             <div>
-              <h2 className="text-lg font-semibold">Bintang Ramadhan</h2>
-              <div className="flex">
+              <h2 className="text-xl font-semibold">Bintang Ramadhan</h2>
+              <div className="mt-4">
                 <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110 mr-2"
-                  onClick={() => handleWhatsAppClick('+6285715771891')}
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-110 mb-4"
+                  onClick={() => handleWhatsAppClick('nomerwa')}
                 >
-                  <FiPhone className="inline-block mr-1" />
+                  <FiPhone className="inline-block mr-2" />
                   WhatsApp
                 </button>
                 <button
-                  className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110 mr-2"
-                  onClick={() => handleInstagramClick('person1')}
+                  className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-110 mb-4"
+                  onClick={() => handleInstagramClick('usernameig')}
                 >
-                  <FiInstagram className="inline-block mr-1" />
+                  <FiInstagram className="inline-block mr-2" />
                   Instagram
                 </button>
                 <button
-                  className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110"
-                  onClick={() => handleLinkedInClick('person1')}
+                  className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-110"
+                  onClick={() => handleLinkedInClick('linkedin')}
                 >
-                  <FiLinkedin className="inline-block mr-1" />
+                  <FiLinkedin className="inline-block mr-2" />
                   LinkedIn
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex items-center mb-8">
-            <img src={person2Photo} alt="Person 2" className="w-32 h-32 rounded-full mr-4" />
+          <div className="flex items-center">
+            <img src={foto2} alt="Person 2" className="w-40 h-40 rounded-full mr-6" />
             <div>
-              <h2 className="text-lg font-semibold">Person 2 Name</h2>
-              <div className="flex">
+              <h2 className="text-xl font-semibold">Dzaky Naufal</h2>
+              <div className="mt-4">
                 <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110 mr-2"
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-110 mb-4"
                   onClick={() => handleWhatsAppClick('+6281318041130')}
                 >
-                  <FiPhone className="inline-block mr-1" />
+                  <FiPhone className="inline-block mr-2" />
                   WhatsApp
                 </button>
                 <button
-                  className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110 mr-2"
-                  onClick={() => handleInstagramClick('person2')}
+                  className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-110 mb-4"
+                  onClick={() => handleInstagramClick('dzakynfll')}
                 >
-                  <FiInstagram className="inline-block mr-1" />
+                  <FiInstagram className="inline-block mr-2" />
                   Instagram
                 </button>
                 <button
-                  className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-110"
-                  onClick={() => handleLinkedInClick('person2')}
+                  className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-110"
+                  onClick={() => handleLinkedInClick('dzaky-naufal-8a19b3245')}
                 >
-                  <FiLinkedin className="inline-block mr-1" />
+                  <FiLinkedin className="inline-block mr-2" />
                   LinkedIn
                 </button>
               </div>
             </div>
           </div>
-         
         </div>
       </div>
     </Layout>
