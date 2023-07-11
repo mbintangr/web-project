@@ -10,7 +10,7 @@ function Contact() {
          Hubungi kami!
         </p>
         <a
-          href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER"
+          href="https://api.whatsapp.com/send?phone=+62 81318041130"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
