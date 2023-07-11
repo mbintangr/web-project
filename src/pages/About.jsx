@@ -79,9 +79,9 @@ const About = () => {
           </div>
         )}
           <p className='text-center mt-4'>
-          Selamat datang di website kami! Kami adalah dua orang pembuat web yang bersemangat dalam
-          menggabungkan teknologi dengan kreativitas. Kami harap Anda menikmati eksplorasi di dunia
-          kuliner melalui website ini. Terima kasih atas kunjungan Anda!
+            Dear valued readers,
+          we are excited to introduce our new website that combines our love for food and coding. As two individuals who share a passion for both culinary delights and the world of technology, we have created a platform that offers a diverse collection of recipes from various cuisines, both local and international.
+          Our website is a valuable resource for food enthusiasts, providing inspiration and a wide range of culinary options. Whether you are interested in exploring traditional dishes from our homeland or venturing into international flavors, you will find carefully curated recipes that have been extensively tested and come with easy-to-follow instructions.
         </p>
 
       </div>
