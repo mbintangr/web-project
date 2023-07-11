@@ -15,10 +15,10 @@ const About = () => {
   return (
     <Layout>
       <div className='flex flex-col items-center'>
-        <h1 className='text-3xl font-bold pb-5'>About Us!</h1>
-        <div className='mb-auto grid grid-cols-2 gap-4'>
+        <h1 className='text-4xl font-bold mt-8 mb-4'>About Us</h1>
+        <div className='grid grid-cols-2 gap-6'>
           <div
-            className='flex flex-col items-center cursor-pointer'
+            className='flex flex-col items-center cursor-pointer hover:shadow-md transition duration-300'
             onClick={() => toggleModal('creator1')}
           >
             <img
@@ -26,9 +26,10 @@ const About = () => {
               src={pict}
               alt='First Creator'
             />
+            <h2 className='mt-4 text-xl font-medium'>Bintang</h2>
           </div>
           <div
-            className='flex flex-col items-center cursor-pointer'
+            className='flex flex-col items-center cursor-pointer hover:shadow-md transition duration-300'
             onClick={() => toggleModal('creator2')}
           >
             <img
@@ -36,6 +37,7 @@ const About = () => {
               src={picts}
               alt='Second Creator'
             />
+            <h2 className='mt-4 text-xl font-medium'>Dzaky</h2>
           </div>
         </div>
         {showModal && (
@@ -49,10 +51,7 @@ const About = () => {
                     alt='First Creator'
                   />
                   <h2 className='text-2xl font-bold text-center'>Bintang</h2>
-                  <p className='text-center'>
-                    Umur: 19 Tahun
-                    Pesan singkat: "Pesan singkat saya"
-                  </p>
+                  <p className='text-center'>Age: 19 years old</p>
                 </div>
               )}
               {selectedCreator === 'creator2' && (
@@ -63,10 +62,7 @@ const About = () => {
                     alt='Second Creator'
                   />
                   <h2 className='text-2xl font-bold text-center'>Dzaky</h2>
-                  <p className='text-center'>
-                    Umur: 19 Tahun
-                    Pesan singkat: "Ini pesan singkat"
-                  </p>
+                  <p className='text-center'>Age: 19 years old</p>
                 </div>
               )}
               <button
@@ -78,12 +74,9 @@ const About = () => {
             </div>
           </div>
         )}
-          <p className='text-center mt-4'>
-            Dear valued readers,
-          we are excited to introduce our new website that combines our love for food and coding. As two individuals who share a passion for both culinary delights and the world of technology, we have created a platform that offers a diverse collection of recipes from various cuisines, both local and international.
-          Our website is a valuable resource for food enthusiasts, providing inspiration and a wide range of culinary options. Whether you are interested in exploring traditional dishes from our homeland or venturing into international flavors, you will find carefully curated recipes that have been extensively tested and come with easy-to-follow instructions.
+        <p className='text-lg text-center max-w-2xl mt-8'>
+          Welcome to our website! We are passionate individuals who love both food and coding. Our platform offers a diverse collection of recipes from various cuisines, both local and international. Whether you are interested in exploring traditional dishes from our homeland or trying out international flavors, you will find carefully curated recipes that are easy to follow. Join us on this culinary adventure!
         </p>
-
       </div>
     </Layout>
   );
