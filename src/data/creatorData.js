@@ -11,6 +11,6 @@ export const creatorData = [
         name: "Dzaky Naufal",
         phone: "6281318041130",
         ig: "https://www.instagram.com/dzakynfll", 
-        linkedin: "https://www.linkedin.com/in/muhammad-bintang-ramadhan-b8a94b21b"
+        linkedin: "https://www.linkedin.com/in/dzaky-naufal-8a19b3245"
     },
 ]
