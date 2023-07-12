@@ -17,7 +17,7 @@ const About = () => {
     <div>
       <Layout>
         <div className='flex flex-col items-center'>
-          <h1 className='text-4xl font-bold mb-8'>About Us</h1>
+          <h1 className='text-2xl sm:text-3xl font-bold mb-8'>About Us</h1>
           <div className='grid grid-cols-2 gap-6'>
             <div
               className='flex flex-col items-center cursor-pointer hover:shadow-md transition duration-300'
@@ -81,7 +81,7 @@ const About = () => {
           </p>
         </div>
       </Layout>
-      <Footer position="relative md:absolute" />
+      <Footer position="relative md:absolute lg:bg-opacity-20 lg:bg-gray-500" />
     </div>
   );
 };
