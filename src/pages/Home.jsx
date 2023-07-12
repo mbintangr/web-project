@@ -2,6 +2,7 @@ import React from "react";
 import Welcome from "../components/Welcome";
 import Information from "../components/Information";
 import Trending from "../components/Trending";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -9,6 +10,8 @@ const Home = () => {
       <Welcome />
       <Information />
       <Trending />
+      
+      <Footer position='relative' />
     </div>
   );
 };

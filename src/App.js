@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import About from './pages/About'
 import Recipes from './pages/Recipes'
 import Home from './pages/Home';
-import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import Foods from './pages/Foods';
@@ -28,7 +27,6 @@ function App() {
 
           <Route path="/Contact" element={<Contact />} />
         </Routes>
-        <Footer></Footer>
       </Router>
     </div>
   );
