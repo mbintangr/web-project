@@ -14,10 +14,10 @@ const About = () => {
   };
 
   return (
-    <div>
-      <Layout>
+    <div className='h-full relative '>
+      <Layout className="">
         <div className='flex flex-col items-center'>
-          <h1 className='text-2xl sm:text-3xl font-bold mb-8'>About Us</h1>
+          <h1 className='text-2xl sm:text-3xl text-primary font-bold mb-8'>About Us</h1>
           <div className='grid grid-cols-2 gap-6'>
             <div
               className='flex flex-col items-center cursor-pointer hover:shadow-md transition duration-300'
@@ -76,12 +76,12 @@ const About = () => {
               </div>
             </div>
           )}
-          <p className='text-lg text-center max-w-2xl mt-8'>
+          <p className='text-lg text-center mt-8'>
             Welcome to our website! We are passionate individuals who love both food and coding. Our platform offers a diverse collection of recipes from various cuisines, both local and international. Whether you are interested in exploring traditional dishes from our homeland or trying out international flavors, you will find carefully curated recipes that are easy to follow. Join us on this culinary adventure!
           </p>
         </div>
       </Layout>
-      <Footer position="relative md:absolute lg:bg-opacity-20 lg:bg-gray-500" />
+      <Footer position="relative" />
     </div>
   );
 };
