@@ -20,7 +20,7 @@ const About = () => {
           <h1 className='text-2xl sm:text-3xl text-primary font-bold mb-8'>About Us</h1>
           <div className='grid grid-cols-2 gap-6'>
             <div
-              className='flex flex-col items-center cursor-pointer hover:shadow-md transition duration-300'
+              className='flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300'
               onClick={() => toggleModal('creator1')}
             >
               <img
@@ -31,7 +31,7 @@ const About = () => {
               <h2 className='mt-4 text-lg sm:text-xl font-medium'>Bintang Ramadhan</h2>
             </div>
             <div
-              className='flex flex-col items-center cursor-pointer hover:shadow-md transition duration-300'
+              className='flex flex-col items-center cursor-pointer hover:scale-105 transition duration-300'
               onClick={() => toggleModal('creator2')}
             >
               <img
