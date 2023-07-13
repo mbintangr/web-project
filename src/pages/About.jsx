@@ -14,7 +14,7 @@ const About = () => {
   };
 
   return (
-    <div className='h-full relative '>
+    <div className='h-screen relative '>
       <Layout className="">
         <div className='flex flex-col items-center'>
           <h1 className='text-2xl sm:text-3xl text-primary font-bold mb-8'>About Us</h1>
@@ -81,7 +81,7 @@ const About = () => {
           </p>
         </div>
       </Layout>
-      <Footer position="relative" />
+      <Footer position="relative sm:fixed" />
     </div>
   );
 };
