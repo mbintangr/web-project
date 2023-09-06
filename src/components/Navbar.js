@@ -9,14 +9,16 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="text-center flex py-5 px-[10vw] sm:px-[15vw] justify-between bg-primary text-tertiary items-center w-[100vw] fixed shadow-xl z-20 max-h-[75px] sm:max-h-[100px] top-0 left-0">
+    <div className="text-center flex py-5 px-[10vw] sm:px-[15vw] justify-between bg-primary
+     text-tertiary items-center w-[100vw] fixed shadow-xl z-20 max-h-[75px] sm:max-h-[100px] 
+     top-0 left-0">
       <Link to="/">
         <div className="flex items-center">
           <img src={navLogo} alt="" className="h-[35px] mr-2 sm:h-[50px]" />
           <h1 className="text-2xl sm:text-3xl font-bold">Cravery</h1>
         </div>
       </Link>
-      <div className="hidden sm:flex items-center mt-2">
+      <div className="hidden sm:flex items-center">
         <ul className="flex">
           <li className="mx-3">
             <Link to="/About">About</Link>

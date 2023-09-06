@@ -81,7 +81,7 @@ const About = () => {
           </p>
         </div>
       </Layout>
-      <Footer position="relative sm:fixed" />
+      <Footer position="fixed" />
     </div>
   );
 };
